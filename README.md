@@ -13,6 +13,8 @@ This fork contains a german locale for these data types:
 - month name
 - ssn (Rentenversicherungsnummer)
 
+Thanks to [Uwe Hölzel](http://deruwe.de/2009/11/adressgenerator.html) for the names.
+
 ## Install
 
 ```
