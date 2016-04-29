@@ -19,6 +19,13 @@ This fork contains a german locale for these data types:
 npm install chance-de
 ```
 
+## Usage
+
+```js
+var Chance = require('chance-de')
+var chacne = new Chance()
+```
+
 ## Examples
 
 __first__
