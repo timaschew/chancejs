@@ -13,6 +13,12 @@ This fork contains a german locale for these data types:
 - month name
 - ssn (Rentenversicherungsnummer)
 
+## Install
+
+```
+npm install chance-de
+```
+
 ## Examples
 
 __first__
