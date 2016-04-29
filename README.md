@@ -1,3 +1,127 @@
+# This is a fork
+
+This fork contains a german locale for these data types:
+
+- first name (1.6k female and 1.2k male)
+- gender title
+- last name (3.4k names)
+- streetnames (7.2k real names)
+- cities with postcal codes (13.7k real combinations)
+- phone numbers for geographic area codes and non-geographic area codes (mobile)
+- states (Bundesländer)
+- date formats: europe = `DD.MM.YYYY` and iso = `YYYY-MM-DD`
+- month name
+- ssn (Rentenversicherungsnummer)
+
+## Examples
+
+__first__
+
+```js
+chance.first({nationality: 'de'})
+// 'Ilsa'
+```
+
+__last__
+
+```js
+chance.last({nationality: 'de'})
+// 'Buschmann
+```
+
+__name__
+
+```js
+chance.name({nationality: 'de'})
+// 'Liselotte Klee'
+```
+
+__gender__
+
+```js
+chance.gender({nationality: 'de'})
+// 'Mann'
+```
+
+__ssn__
+
+```js
+chance.ssn({nationality: 'de'})
+// '36718897P510'
+```
+
+__street__
+
+```js
+chance.street({country: 'de'})
+// 'Beckerstraße'
+```
+
+__city__
+
+```js
+chance.city({country: 'de'})
+// 'Gerstungen'
+```
+
+__zip__
+
+```js
+chance.zip({country: 'de'})
+// '12529'
+
+```
+
+__postal__
+
+```js
+chance.postal({country: 'de'})
+// '55483 Krummenau'
+
+```
+
+__phone__
+
+```js
+chance.phone({country: 'de'})
+// '0447 5059231'
+
+chance.phone({mobile: true, country: 'de'})
+// '0155 6431902'
+```
+
+__state__
+
+```js
+chance.state({country: 'de', full: true})
+// 'Thüringen'
+```
+
+__month__
+
+```js
+chance.month({country: 'de'})
+// 'Juli'
+```
+
+__date__
+
+```js
+chance.date({string: true, type: 'iso'})
+// '2026-04-16'
+
+chance.date({string: true, type: 'europe'})
+// '30.11.2038'
+
+```
+
+### File size disclamer
+
+File size of the minified file is now 737kB due to real real streets, cities and postal combinations
+
+
+---
+
 # Chance
 
 [![Chance Logo](http://chancejs.com/logo.png)](http://chancejs.com)
